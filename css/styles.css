@@ -1,0 +1,386 @@
+body {
+    background-color: #0a192f;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    line-height: 1.3;
+}
+
+/* Contenu du main */
+.main-content {
+    margin-left: 250px;
+    /* Décale le contenu principal pour laisser la place à la barre latérale */
+    padding: 20px;
+    max-width: 1500px;
+}
+
+section {
+    min-height: 85vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 300px;
+    align-items: center;
+    text-align: left;
+    display: flex;
+}
+
+/* Gère les div content */
+.content {
+    margin: 10px;
+    /* Centre le contenu horizontalement */
+    max-width: 800px;
+    /* Limite la largeur pour un rendu cohérent */
+    padding: 10px;
+    /* Ajoute de l'espace autour du contenu */
+}
+
+h1 {
+    color: rgb(100, 255, 218);
+    margin: 0px 0px 20px 3px;
+    font-size: 16px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-weight: normal;
+}
+
+h2 {
+    color: rgb(204, 214, 246);
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 28px;
+    color: #64ffda;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+i {
+    margin-right: 10px;
+    color: #64ffda;
+}
+
+.ispe {
+    color: #8892b0;
+    margin-right: 0px;
+}
+
+.h3spe {
+    color: #8892b0;
+    font-weight: 600px;
+    text-align: left;
+    font-size: 80px;
+    line-height: 1.1;
+}
+
+p {
+    color: #8892b0;
+    font-weight: 20px;
+    margin: 0px 0px 15px;
+}
+
+
+/* Barre latérale */
+.sidebar {
+    width: 250px;
+    /* Largeur de la barre */
+    height: 100vh;
+    /* Hauteur totale de l'écran */
+    background-color: #0a192f;
+    /* Couleur sombre */
+    color: #e6f1ff;
+    /* Couleur du texte */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Positionne le menu en haut et le footer en bas */
+    position: fixed;
+    /* Fixe la barre à gauche */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Effet d'ombre */
+}
+
+/* Header de la barre */
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sidebar-header h2 {
+    font-size: 1.5rem;
+    color: #64ffda;
+    /* Couleur d'accent */
+    margin-bottom: 5px;
+    /* Réduit l'espace sous le titre */
+}
+
+.sidebar-header p {
+    font-size: 0.9rem;
+    color: #8892b0;
+}
+
+/* Menu de navigation */
+.sidebar-menu ul {
+    list-style: none;
+    /* Pas de puces */
+    padding: 0;
+    margin-bottom: 600px;
+}
+
+.sidebar-menu ul li {
+    margin-bottom: 20px;
+    /* Espacement entre les liens */
+}
+
+.sidebar-menu ul li a {
+    text-decoration: none;
+    /* Pas de soulignement */
+    color: #ccd6f6;
+    /* Couleur des liens */
+    font-size: 1.1rem;
+    display: flex;
+    /* Permet d'aligner l'icône et le texte */
+    align-items: center;
+}
+
+.sidebar-menu ul li a:hover {
+    color: #64ffda;
+    /* Couleur au survol */
+}
+
+/* Icônes des liens */
+.sidebar-menu ul li a i {
+    margin-right: 10px;
+    /* Espace entre l'icône et le texte */
+}
+
+/* Footer */
+.sidebar-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #8892b0;
+    margin-top: -300px;
+}
+
+.social-icons {
+    display: flex;
+    /* Les icônes en ligne */
+    justify-content: center;
+    /* Centre les icônes horizontalement */
+    gap: 15px;
+    /* Espace entre les icônes */
+    margin-top: 0px;
+    /* Espace avec le contenu précédent */
+    margin-bottom: 60px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: #0a192f;
+    /* Couleur de fond sombre */
+    color: #ccd6f6;
+    /* Couleur des icônes */
+    border-radius: 50%;
+    /* Icônes circulaires */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* Supprime le soulignement */
+    transition: all 0.3s ease;
+    /* Animation douce */
+}
+
+.social-icons a:hover {
+    background-color: #64ffda;
+    /* Couleur d'accent au survol */
+    color: #0a192f;
+    /* Change la couleur des icônes */
+}
+
+
+/* Bouton "Resume" */
+.resume-button {
+    position: fixed;
+    /* Positionne précisément le bouton */
+    top: 30px;
+    /* Distance depuis le haut de la page */
+    right: 45px;
+    /* Distance depuis le bord gauche */
+}
+
+.resume-button .btn {
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.resume-button .btn:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+.content p {
+    color: #ccd6f6;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.motivation-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+.motivation-list li {
+    color: #64ffda;
+    font-size: 18px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.motivation-list li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: #64ffda;
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Grille des compétences */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    /* Répète les colonnes selon l'espace disponible */
+    gap: 30px;
+    /* Espacement entre les compétences */
+    justify-items: center;
+    /* Centre chaque élément dans la colonne */
+    margin: 0 auto;
+    /* Centre la grille horizontalement */
+    max-width: 800px;
+    /* Limite la largeur maximale de la grille */
+    margin-top: 30px;
+}
+
+
+/* Style des compétences */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill h4 {
+    font-size: 16px;
+    color: #ccd6f6;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.skill img:hover {
+    transform: rotate(10deg);
+}
+
+/* Partie Compétences */
+.image-carousel {
+    opacity: 0.2;
+    width: 780px;
+    /* Largeur fixe */
+    height: 500px;
+    /* Hauteur fixe */
+    object-fit: cover;
+    /* Ajuste l'image pour remplir l'espace sans distorsion */
+    margin: 0 auto;
+    /* Centre l'image si nécessaire */
+    border-radius: 24px;
+    /* Arrondit les coins */
+    display: block;
+    /* Empêche des comportements imprévus */
+}
+
+/* Partie parcours */
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-list li {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.experience-list li h3 span {
+    color: #8892b0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.details {
+    list-style: none;
+    color: #ccd6f6;
+}
+
+.details li {
+    margin-bottom: 8px;
+}
+
+.details li::before {
+    content: ">";
+    color: #64ffda;
+}
+
+/* Email en bas a gauche */
+.email-vertical {
+    position: fixed;
+    bottom: 20px;
+    /* Ajoute un espace entre le bas de la page et le texte */
+    right: 30px;
+    /* Ajoute un espace par rapport au bord droit */
+    writing-mode: vertical-rl;
+    /* Positionne le texte verticalement */
+    text-align: center;
+    transform: rotate(180deg);
+    /* Inverse le texte pour qu'il soit lisible de bas en haut */
+    font-size: 24px;
+    color: #64ffda;
+    /* Couleur du texte */
+    z-index: 10;
+    /* Assure que l'e-mail est au-dessus d'autres éléments */
+}
+
+.email-vertical a {
+    text-decoration: none;
+    color: #64ffda;
+    transition: color 0.3s ease;
+}
+
+.email-vertical a:hover {
+    color: #8892b0;
+    /* Change la couleur au survol */
+}
